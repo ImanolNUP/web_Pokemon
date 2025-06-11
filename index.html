@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokédex Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .hero {
+      background: linear-gradient(120deg, #ffcc00 0%, #ff6666 100%);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png') no-repeat center center;
+      background-size: contain;
+      opacity: 0.1;
+    }
+
+    .contenido-hero {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+      padding: 2rem;
+    }
+
+    .contenido-hero h1 {
+      font-size: 3rem;
+    }
+
+    .contenido-hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .btn-cta {
+      background-color: #ffffff;
+      color: #ef5350;
+      font-weight: bold;
+      padding: 0.75rem 2rem;
+      border-radius: 30px;
+      margin-top: 2rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-cta:hover {
+      background-color: #ffee58;
+    }
+
+    .features {
+      padding: 4rem 2rem;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background-color: #fff8e1;
+    }
+
+    .feature {
+      max-width: 300px;
+      margin: 1rem;
+      text-align: center;
+    }
+
+    .feature img {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    .feature h3 {
+      color: #ef5350;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Pokédex Web</div>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="buscador.html">Buscador</a></li>
+      <li><a href="info.html">Historia</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="contenido-hero">
+      <h1>¡Atrápalos ya!</h1>
+      <p>Descubre el universo Pokémon desde tu navegador</p>
+      <a href="buscador.html" class="btn-cta">Explorar Pokédex</a>
+    </div>
+  </section>
+
+
+  <footer>
+    Proyecto Imanol Lumbreras basado en PokeAPI · &copy; 2025
+  </footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscador Pokémon</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Pokédex Web</div>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="buscador.html">Buscador</a></li>
+      <li><a href="info.html">Historia</a></li>
+    </ul>
+  </nav>
+
+  <main class="buscador">
+    <h1>Busca tu Pokémon</h1>
+    <input type="text" id="searchInput" placeholder="Nombre, tipo o número">
+    <button onclick="buscarPokemon()">Buscar</button>
+    <div id="resultado"></div>
+  </main>
+
+  <footer>
+    Buscador conectado a la API pública de Pokémon · &copy; 2025
+  </footer>
+  <script src="js/buscador.js"></script>
+</body>
+</html>
